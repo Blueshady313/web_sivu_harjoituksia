@@ -1,0 +1,55 @@
+/* Perusasetukset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Ylätunniste */
+header {
+    background: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pääsisältö */
+main {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Alatunniste */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Responsiivisuus */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+}
