@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi" data-theme="vaalea">
+    <head>
+        <meta charset="UTF-8">
+        <title>Teemasivu</title>
+        <style>
+            body { font-family: Arial, sans-serif;}
+            [data-theme="tumma"] {
+                background-color: #111;
+                color: #fff;
+            }
+            [data-theme="vaalea"] {
+                background-color: #fff;
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Valitse teema</h1>
+        <button onclick="toggleTheme()">Vaihda teema</button>
+
+        <script>
+            function toggleTheme() {
+                const html = document.documentElement;
+                html.dataset.theme = html.dataset.theme === 'tumma' ? 'vaalea' : 'tumma';
+            }
+        </script>
+    </body>
+</html>
